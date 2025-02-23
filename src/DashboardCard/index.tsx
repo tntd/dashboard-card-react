@@ -12,8 +12,6 @@ export interface TextProps extends Omit<ComponentProps<"div">, "onClick"> {
   countColor?: string;
   icon?: React.ReactNode;
   color?: string;
-  // iconColor?: string;
-  // bgColor?: string;
   iconShape?: "round" | "circle";
   theme?: "default" | "s1" | "s2" | "s3" | "s4";
   bgGradient?: boolean;
@@ -29,8 +27,6 @@ export const DashboardCard: FC<TextProps> = ({
   countColor,
   icon,
   color = "#59a6e5",
-  // iconColor,
-  // bgColor,
   style,
   theme = "default",
   iconShape = "round",

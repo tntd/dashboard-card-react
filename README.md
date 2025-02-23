@@ -70,10 +70,18 @@ export default () => {
 
 ### 组件 API
 
-| 参数     | 数据类型 | 是否必填 | 默认值  | 备注                         |
-| -------- | -------- | -------- | ------- | ---------------------------- |
-| nickname | String   | 是       | -       | 用户昵称                     |
-| account  | String   | 是       | -       | 用户账号，用来判断使用颜色   |
-| size     | number   | 否       | 32      | 头像大小（宽高）             |
-| onClick  | function | 否       | -       | 卡片内的头像点击             |
-| theme    | String   | 否       | default | 卡片内的主题，default、plant |
+### API
+
+| 参数        | 说明             | 类型                            | 是否必须 | 默认值  |
+| ----------- | ---------------- | ------------------------------- | -------- | ------- |
+| title       | 标题             | string                          | 否       | -       |
+| tipText     | 提示文本         | string                          | 否       | -       |
+| count       | 数量             | number \| string                | 否       | -       |
+| countPrefix | 数量前缀         | string                          | 否       | -       |
+| countUnit   | 数量单位         | string                          | 否       | -       |
+| countColor  | 数量颜色         | string                          | 否       | -       |
+| icon        | 图标             | React.ReactNode                 | 否       | -       |
+| color       | 颜色             | string                          | 否       | #59a6e5 |
+| iconShape   | 图标形状         | round \| circle                 | 否       | round   |
+| theme       | 主题             | default \| s1 \| s2 \| s3 \| s4 | 否       | default |
+| bgGradient  | 是否启用背景渐变 | boolean                         | 否       | false   |
